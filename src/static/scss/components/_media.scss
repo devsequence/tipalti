@@ -385,8 +385,35 @@
       }
     }
   }
+  .hero-logo{
+    overflow: hidden;
+    &__item {
+      min-width: 650px;
+      span{
+        min-width: 110px;
+        width: calc(20% - 10px);
+        margin: 0 5px 10px;
+      }
+      img{
+        width: 70px;
+      }
+    }
+  }
 }
 @media screen and (max-width: 576px) {
+  .hero {
+    .container{
+      flex-direction: column-reverse;
+    }
+    &-desc{
+      width: 100%;
+      max-width: 100%;
+    }
+    &-media{
+      width: 100%;
+      max-width: 100%;
+    }
+  }
   .privilege-item{
     align-items: flex-end;
     &__desc{
@@ -419,8 +446,43 @@
   .footer{
     &-item{
       width: 100%;
+      &__title{
+        border-bottom: 1px solid rgba(242,244,251,.15);
+        position: relative;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        &:after{
+          content: "";
+          width: 0.5em;
+          height: 0.5em;
+          position: absolute;
+          right: 0.5em;
+          top: 1px;
+          bottom: 0;
+          margin: auto 0 auto 0.75em;
+          border-top: 1px solid;
+          border-right: 1px solid;
+          border-bottom: 0;
+          border-left: 0;
+          display: block;
+          transform-origin: 50% 30%;
+          transition: transform 350ms ease;
+          transform: rotate(45deg);
+          opacity: .5;
+        }
+        &.active{
+          border-bottom: 0;
+          padding-bottom: 0;
+          &:after{
+            transform: rotate(135deg);
+          }
+        }
+      }
       ul{
         display: none;
+        padding-bottom: 10px;
+        border-bottom: 1px solid rgba(242,244,251,.15);
+        margin-bottom: 10px;
       }
     }
     &-social{
