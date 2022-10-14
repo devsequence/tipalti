@@ -1,5 +1,5 @@
 AOS.init({disable: 'mobile'});
-if ($(window).width() < 768) {
+if ($(window).width() > 768) {
     $('.solutions-item__tab-nav a').on('click', function (e) {
         e.preventDefault();
         var $this = $(this);
