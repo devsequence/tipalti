@@ -1,0 +1,116 @@
+.header{
+  position: fixed;
+  width: 100%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 12;
+  background: rgba($white, .9);
+  .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 33px 18px;
+    max-width: 1270px;
+  }
+  &-logo{
+    width: 100px;
+    a, img{
+      width: 100%;
+    }
+  }
+  &-lang{
+    margin: 0 0 0 auto;
+    ul{
+      display: none;
+    }
+  }
+  &-nav{
+    font-size: 14px;
+    ul{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .sub-menu{
+      display: none;
+    }
+
+  }
+  &-login{
+    font-size: 14px;
+    margin:0 20px 0 auto;
+    a{
+      position: relative;
+      &:after{
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 0;
+        margin-top: -4px;
+        width: 9px;
+        height: 9px;
+        margin-left: 5px;
+        border-top: 1px solid;
+        border-right: 1px solid;
+        border-bottom: 0;
+        border-left: 0;
+        display: block;
+        transform: rotate(45deg);
+        transform-origin: 50% 30%;
+        transition: all 350ms ease;
+      }
+      &:hover{
+        &:after{
+          right: -5px;
+        }
+      }
+    }
+  }
+  &-button{
+    font-size: 15px;
+  }
+  &-search{
+    width: 20px;
+    height: 20px;
+    caret-color: #8194dd;
+    color: #021d2d;
+    font-size: 16.395px;
+    font-weight: 500;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-color: transparent;
+    background: unset;
+    background-color: transparent;
+    background-image:  url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath d='M500.3 443.7l-119.7-119.7c27.22-40.41 40.65-90.9 33.46-144.7C401.8 87.79 326.8 13.32 235.2 1.723C99.01-15.51-15.51 99.01 1.724 235.2c11.6 91.64 86.08 166.7 177.6 178.9c53.8 7.189 104.3-6.236 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 0C515.9 484.7 515.9 459.3 500.3 443.7zM79.1 208c0-70.58 57.42-128 128-128s128 57.42 128 128c0 70.58-57.42 128-128 128S79.1 278.6 79.1 208z' fill='%23021D2D'/%3E%3C/svg%3E");
+    background-size: 18px;
+    background-repeat: no-repeat;
+    background-position: 18px 50%;
+    border-radius: 24px;
+    padding-left: 42px;
+  }
+  a{
+    &.menu-link{
+      display: block;
+      font-size: 14px;
+      text-transform: uppercase;
+      font-weight: 700;
+      padding: 18px 15px;
+      letter-spacing: 1.25px;
+      white-space: nowrap;
+      color: $default;
+      &:hover{
+        color: $default-hover;
+      }
+    }
+  }
+  .btn-primary{
+    padding: 14px 30px 14px 24px;
+    border: 2px solid #FFBD00;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+}
+.page-content{
+  padding: 120px 0 0;
+}
