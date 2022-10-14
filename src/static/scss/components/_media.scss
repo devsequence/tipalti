@@ -99,17 +99,12 @@
     &-logo{
       width: 60px;
     }
-    &-lang{
-      display: none;
-    }
-    &-nav{
-      display: none;
-    }
-    &-login{
-      display: none;
-    }
-    &-search{
-      display: none;
+    &-wrap{
+      position: absolute;
+      left: 0;
+      visibility: hidden;
+      opacity: 0;
+      top: 0;
     }
   }
   .hero{
@@ -385,8 +380,19 @@
       }
     }
   }
+  .solutions-item{
+    &__list {
+      li{
+        margin-bottom: 25px;
+      }
+    }
+    &__tab{
+      margin-top: 10px;
+    }
+  }
   .hero-logo{
     overflow: hidden;
+    margin: 50px 0 40px;
     &__item {
       min-width: 650px;
       span{
