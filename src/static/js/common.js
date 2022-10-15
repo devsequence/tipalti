@@ -24,10 +24,17 @@ if ($(window).width() < 992) {
         $this.find('.sub-menu').toggleClass('active');
     });
 }
-$(document).on('focus','.header-search', function (e) {
-    $('.header-search').css('width', 'auto');
-    $('.header-search').css('padding-left', '0');
+$( ".input-search" ).focus(function() {
+    $('.header').addClass('focus');
 });
+$(document).mouseup(function (e){
+    var div = $('.header-search');
+    if (!div.is(e.target)
+        && div.has(e.target).length === 0) {
+        $('.header').removeClass('focus');
+    }
+});
+
 $('.hero-info__title span').on('click', function (e) {
     e.preventDefault();
     var $this = $(this);
