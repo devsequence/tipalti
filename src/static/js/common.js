@@ -17,6 +17,13 @@ if ($(window).width() < 425) {
         $this.toggleClass('active').next().slideToggle();
     });
 }
+if ($(window).width() < 992) {
+    $('.header-nav .menu-item').on('click', function (e) {
+        e.preventDefault();
+        var $this = $(this);
+        $this.find('.sub-menu').toggleClass('active');
+    });
+}
 $(document).on('focus','.header-search', function (e) {
     $('.header-search').css('width', 'auto');
     $('.header-search').css('padding-left', '0');
@@ -25,6 +32,12 @@ $('.hero-info__title span').on('click', function (e) {
     e.preventDefault();
     var $this = $(this);
     $this.toggleClass('active').next().toggleClass('active');
+});
+$('.header-btn').on('click', function (e) {
+    e.preventDefault();
+    var $this = $(this);
+    $this.toggleClass('active').parents('header').toggleClass('active');
+    $('.page-content').toggleClass('active');
 });
 
 const SwiperDefault = new Swiper('.js-swiper', { runCallbacksOnInit: false, speed: 350, threshold: 1, slidesPerView: 1.15, slidesPerGroup: 1, centeredSlides: true,

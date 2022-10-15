@@ -106,6 +106,115 @@
       opacity: 0;
       top: 0;
     }
+    &-btn{
+      display: block;
+      padding: 6px 3px 3px;
+      margin: 0 20px 0 0;
+      width: 26px;
+      height: 26px;
+      position: relative;
+      &:before, &:after, span{
+        position: absolute;
+        background: $default;
+        height: 2px;
+        left: 0;
+        transition: all ease 300ms;
+      }
+      &:before,
+      &:after{
+        content: '';
+        width: 100%;
+      }
+      &:before{
+        top: 3px;
+      }
+      &:after{
+        top: calc(100% - 5px);
+      }
+      span{
+        width: 24px;
+        top: 50%;
+        margin-top: -1px;
+      }
+      &.active{
+        &:before,
+        &:after{
+          content: '';
+          width: 100%;
+          top: 50%;
+          margin-top: -2px;
+          background: #ffbd00;
+        }
+        span{
+          opacity: 0;
+        }
+        &:before{
+          transform: rotate(45deg);
+        }
+        &:after{
+          transform: rotate(-45deg);
+        }
+      }
+    }
+    &-link{
+      margin: 0 0 0 auto;
+      display: block;
+      .btn-primary{
+        padding: 6px 24px 7px 13px;
+        font-weight: 500;
+        font-size: 14px;
+      }
+    }
+    .header-login{
+      margin: 0 auto 0 0;
+      .menu-link{
+        font-size: 16px;
+      }
+    }
+    .header-button{
+      width: 100%;
+      margin-bottom: 30px;
+      .btn-primary{
+        width: 100%;
+      }
+    }
+    .header-search{
+      width: 100% !important;
+      padding-left: 0 !important;
+      form,
+      label{
+        width: 100%;
+        display: block;
+      }
+      .input-search{
+        width: 100%;
+        border-color: #f2f4fb;
+        background-color: #f2f4fb;
+      }
+    }
+    .header-nav {
+      .menu-item:last-of-type .sub-menu ul{
+        margin-bottom: 20px;
+      }
+      .sub-menu{
+        position: relative;
+        display: none !important;
+        column-count: 1 !important;
+        box-shadow: none;
+        padding: 0;
+        column-gap: 0;
+        background: transparent;
+
+        &.active{
+          opacity: 1;
+          transform: none;
+          display: block !important;
+        }
+        .menu-link{
+          font-size: 14px;
+        }
+      }
+    }
   }
   .hero{
     &-title{
@@ -434,6 +543,9 @@
   }
 }
 @media screen and (max-width: 425px) {
+  .hero{
+    padding: 50px 0 0;
+  }
   .privilege-item{
     &__desc{
       width: calc(100% - 70px);
