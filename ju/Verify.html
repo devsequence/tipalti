@@ -1,0 +1,304 @@
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <meta name="robots" content="noindex, nofollow">
+
+
+    <link rel="stylesheet" href="https://cdn.auth0.com/ulp/react-components/1.60.9/css/main.cdn.min.css">
+    <style id="custom-styles-container">
+
+
+
+
+
+        :root {
+            --primary-color: #420001;
+        }
+        :root {
+            --button-font-color: #ffffff;
+        }
+        :root {
+            --secondary-button-border-color: #e5e4e1;
+            --social-button-border-color: #e5e4e1;
+            --radio-button-border-color: #e5e4e1;
+        }
+        :root {
+            --secondary-button-text-color: #242424;
+        }
+        :root {
+            --link-color: #420001;
+        }
+        :root {
+            --title-font-color: #242424;
+        }
+        :root {
+            --font-default-color: #242424;
+        }
+        :root {
+            --widget-background-color: #ffffff;
+        }
+        :root {
+            --box-border-color: #ffffff;
+        }
+        :root {
+            --font-light-color: #b5b4b2;
+        }
+        :root {
+            --input-text-color: #242424;
+        }
+        :root {
+            --input-border-color: #e5e4e1;
+            --border-default-color: #e5e4e1;
+        }
+        :root {
+            --input-background-color: #ffffff;
+        }
+        :root {
+            --icon-default-color: #9d9c9a;
+        }
+        :root {
+            --error-color: #fd642f;
+            --error-text-color: #242424;
+        }
+        :root {
+            --success-color: #00c87b;
+        }
+        :root {
+            --base-focus-color: #7b74ff;
+            --transparency-focus-color: rgba(123,116,255, 0.15);
+        }
+        :root {
+            --base-hover-color: #ffffff;
+            --transparency-hover-color: rgba(255,255,255, var(--hover-transparency-value));
+        }
+
+
+
+        @font-face {
+            font-family: 'ULP Custom';
+            font-style: normal;
+            font-weight: var(--font-default-weight);
+            src: local('ULP Custom'), url('https://app.juni.co/content/fonts/ModernEra-Regular.woff2') format('woff');
+        }
+
+        body {
+            --font-family: 'ULP Custom', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, sans-serif;
+        }
+        html, :root {
+            font-size: 16px;
+            --default-font-size: 16px;
+        }
+        body {
+            --title-font-size: 1.25rem;
+            --title-font-weight: var(--font-default-weight);
+        }
+        .c9c60805e {
+            font-size: 0.875rem;
+            font-weight: var(--font-default-weight);
+        }
+        .cb9cb1fd1 {
+            font-size: 0.875rem;
+            font-weight: var(--font-default-weight);
+        }
+        .cf66253b2, .cffe89c90 {
+            font-size: 1rem;
+            font-weight: var(--font-default-weight);
+        }
+        .c5cfc1009 {
+            font-size: 1rem;
+            font-weight: var(--font-default-weight);
+        }
+        .caf0bc0ff, .ca983019e {
+            font-size: 0.875rem;
+            font-weight: var(--font-bold-weight) !important;
+        }
+
+
+
+
+        :root {
+            --button-border-width: 1px;
+            --social-button-border-width: 1px;
+            --radio-border-width: 1px;
+        }
+        body {
+            --button-border-radius: 6px;
+            --radio-border-radius: 6px;
+        }
+        :root {
+            --input-border-width: 1px;
+        }
+        body {
+            --input-border-radius: 6px;
+        }
+        :root {
+            --border-radius-outer: 0px;
+        }
+        :root {
+            --box-border-width: 0px;
+        }
+        body {
+            --shadow-component-outer: none;
+        }
+
+
+
+
+        body {
+            --logo-alignment: 0 auto;
+        }
+
+
+        .c5528dccb {
+            content: url('https://app.juni.co/content/images/juni-logo.svg');
+        }
+
+        body {
+            --logo-height: 34px;
+        }
+        .c5528dccb {
+            height: var(--logo-height);
+        }
+
+
+        body {
+            --header-alignment: center;
+        }
+
+
+
+
+
+        .ceb6c67d0 {
+            --page-background-alignment: center;
+        }
+        body {
+            --page-background-color: #FFFFFF;
+        }
+
+
+
+
+
+
+    </style>
+    <style>
+        /* By default, hide features for javascript-disabled browsing */
+        /* We use !important to override any css with higher specificity */
+        /* It is also overriden by the styles in <noscript> in the header file */
+        .no-js {
+            clip: rect(0 0 0 0);
+            clip-path: inset(50%);
+            height: 1px;
+            overflow: hidden;
+            position: absolute;
+            white-space: nowrap;
+            width: 1px;
+        }
+    </style>
+    <noscript>
+        <style>
+            /* We use !important to override the default for js enabled */
+            /* If the display should be other than block, it should be defined specifically here */
+            .js-required { display: none !important; }
+            .no-js {
+                clip: auto;
+                clip-path: none;
+                height: auto;
+                overflow: auto;
+                position: static;
+                white-space: normal;
+                width: var(--prompt-width);
+            }
+        </style>
+    </noscript>
+
+    <title>Enter your one-time password to log in | Juni</title>
+</head>
+
+<body>
+<div class="c613c0a7f ceb6c67d0">
+
+    <main class="cbfeac2aa cf7972266">
+        <section class="cbf20ab75 _prompt-box-outer c71906102">
+            <div class="c98a5b0ee c325bb6bf">
+                <div class="cc05156b7">
+                    <header class="c8a689c95 c388f344a">
+                        <div title="Juni" id="custom-prompt-logo" style="width: auto !important; height: 60px !important; position: static !important; margin: auto !important; padding: 0 !important; background-color: transparent !important; background-position: center !important; background-size: contain !important; background-repeat: no-repeat !important"></div>
+
+                        <img class="c5528dccb c26bbde4f" id="prompt-logo-center" src="https://app.juni.co/content/images/juni-logo.svg" alt="Juni">
+
+
+                        <h1 class="c7120c1dd c0e594f2c">Verify Your Identity</h1>
+
+
+                        <div class="c9c60805e caadf37ee">
+                            <p class="ccb1cff58 cc9688ae6">Check your preferred one-time password application for a code.</p>
+                        </div>
+                    </header>
+
+                    <div class="cb9cb1fd1 cdb9fdcd3">
+
+
+                        <form method="POST" class="c38082088 cd791713e">
+                            <input type="hidden" name="state" value="hKFo2SBPdVkzejZVVjN4eENWcDZWLXNzOVFTODFyU0hpYlFLN6FusG1mYS1hdXRoZW50aWNhdGWjdGlk2SA5VUtSYVRKd1RkNFJlaUp5VlRGLW9lU0kwRUdMb1FoR6NjaWTZIDJ1WUdXZFo4UWZMR3NZUzdTUEJ4V0FsSTZLeE9jb3pV">
+
+                            <div class="c11aca38f cae42a6c5">
+                                <div class="ccda1b0bd">
+                                    <div class="input-wrapper _input-wrapper">
+                                        <div class="cb78d9273 cd41e63cd text cc196faa1 c3ebfa4c1" data-action-text="" data-alternate-action-text="">
+                                            <label class="c5cfc1009 no-js c267a7479 c2b38084c" for="code">
+                                                Enter your one-time code
+                                            </label>
+
+                                            <input class="input cfd3df4a1 cbe684006" name="code" id="code" type="text" value="" required="" autocomplete="off" autocapitalize="none" spellcheck="false" autofocus="">
+
+                                            <div class="c5cfc1009 js-required c267a7479 c2b38084c" data-dynamic-label-for="code" aria-hidden="true">
+                                                Enter your one-time code
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="c8b8a7e41">
+
+                                <button type="submit" name="action" value="default" class="cf66253b2 ca466c92f c7a1239ca c48127298 ced688b51">Continue</button>
+
+                            </div>
+                        </form>
+
+
+                        <div class="ulp-alternate-action center _alternate-action ">
+                            <form method="POST" class="cbe6ee360">
+                                <input type="hidden" name="state" value="hKFo2SBPdVkzejZVVjN4eENWcDZWLXNzOVFTODFyU0hpYlFLN6FusG1mYS1hdXRoZW50aWNhdGWjdGlk2SA5VUtSYVRKd1RkNFJlaUp5VlRGLW9lU0kwRUdMb1FoR6NjaWTZIDJ1WUdXZFo4UWZMR3NZUzdTUEJ4V0FsSTZLeE9jb3pV">
+
+                                <button type="submit" name="action" aria-label="" value="pick-authenticator" class="caf0bc0ff cc8706b84 c5f90e522">
+
+                                    <span>Try another method</span>
+
+                                </button>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+    </main>
+    <script id="client-scripts" type="text/javascript">
+        !function(){var t,e={exports:function(n,i){var r={};function o(t,e,n,r){return t.addEventListener(e,n,r)}function a(t){return"string"==typeof t}function u(t,e){return t.getAttribute(e)}function s(t,e,n){return t.setAttribute(e,n)}return{addClass:function(t,e){if(t.classList)return t.classList.add(e);var n=t.className.split(" ");-1===n.indexOf(e)&&(n.push(e),t.className=n.join(" "))},toggleClass:function(t,e){if(t.classList)return t.classList.toggle(e);var n=t.className.split(" "),r=n.indexOf(e);-1!==r?n.splice(r,1):n.push(e),t.className=n.join(" ")},addClickListener:function(t,e){return o(t,"click",e)},addEventListener:o,getAttribute:u,getElementById:function(t){return i.getElementById(t)},getParent:function(t){return t.parentNode},isString:a,loadScript:function(t){var e=i.createElement("script");e.src=t,e.async=!0,i.body.appendChild(e)},poll:function(t){var o=t.interval||2e3,e=t.url||n.location.href,a=t.condition||function(){return!0},u=t.onSuccess||function(){},s=t.onError||function(){};return setTimeout(function r(){var i=new XMLHttpRequest;return i.open("GET",e),i.setRequestHeader("Accept","application/json"),i.onload=function(){if(200===i.status){var t="application/json"===i.getResponseHeader("Content-Type").split(";")[0]?JSON.parse(i.responseText):i.responseText;return a(t)?u():setTimeout(r,o)}if(429!==i.status)return s({status:i.status,responseText:i.responseText});var e=1e3*Number.parseInt(i.getResponseHeader("X-RateLimit-Reset")),n=e-(new Date).getTime();return setTimeout(r,o<n?n:o)},i.send()},o)},querySelector:function(t,e){return a(t)?i.querySelector(t):t.querySelector(e)},querySelectorAll:function(t,e){var n=a(t)?i.querySelectorAll(t):t.querySelectorAll(e);return Array.prototype.slice.call(n)},removeClass:function(t,e){if(t.classList)return t.classList.remove(e);var n=t.className.split(" "),r=n.indexOf(e);-1!==r&&(n.splice(r,1),t.className=n.join(" "))},setAttribute:s,removeAttribute:function(t,e){return t.removeAttribute(e)},swapAttributes:function(t,e,n){var r=u(t,e),i=u(t,n);s(t,n,r),s(t,e,i)},setGlobalFlag:function(t,e){r[t]=!!e},getGlobalFlag:function(t){return!!r[t]},preventFormSubmit:function(t){t.stopPropagation(),t.preventDefault()},matchMedia:function(t){return"function"!=typeof n.matchMedia&&n.matchMedia(t).matches},dispatchEvent:function(t,e,n){var r;"function"!=typeof Event?(r=i.createEvent("Event")).initCustomEvent(e,n,!1):r=new Event(e,{bubbles:n}),t.dispatchEvent(r)},setTimeout:setTimeout,timeoutPromise:function(t,i){return new Promise(function(e,n){var r=setTimeout(function(){n(new Error("timeoutPromise: promise timed out"))},t);i.then(function(t){clearTimeout(r),e(t)},function(t){clearTimeout(r),n(t)})})}}}}.exports(window,document);((t={}).exports=function(r,t,i,o,a,u,s,c,n,l){function f(t){var e=t.target,n=u(e);e.value||l(e,"data-autofilled")?o(n,"cf83650ed"):a(n,"cf83650ed")}function d(t){var e=t.target;"onAutoFillStart"===t.animationName&&(n(e,"data-autofilled",!0),c(t.target,"change",!0),i(e,"keyup",p,{once:!0}))}function p(t){var e=t.target;n(e,"data-autofilled","")}if(r("body._simple-labels"))return t(".c5cfc1009.no-js").forEach(function(t){a(t,"no-js")}),void t(".c5cfc1009.js-required").forEach(function(t){o(t,"hide")});t(".cb78d9273:not(.ca24ed330):not(disabled)").forEach(function(t){o(t,"c3ebfa4c1");var e,n=r(t,".input");n.value&&o(t,"cf83650ed"),i(t,"change",f),i(n,"blur",f),i(n,"animationstart",d),e=n,s(function(){e.value&&c(e,"change",!0)},100)})},t.exports)(e.querySelector,e.querySelectorAll,e.addEventListener,e.addClass,e.removeClass,e.getParent,e.setTimeout,e.dispatchEvent,e.setAttribute,e.getAttribute),{exports:function(t,e,n,r,i,o){function a(t){var e=n("submitted");r("submitted",!0),e?i(t):"apple"===o(t.target,"data-provider")&&setTimeout(function(){r("submitted",!1)},2e3)}var u=t("form");u&&u.forEach(function(t){e(t,"submit",a)})}}.exports(e.querySelectorAll,e.addEventListener,e.getGlobalFlag,e.setGlobalFlag,e.preventFormSubmit,e.getAttribute)}();
+    </script>
+</div>
+
+
+</body></html>
